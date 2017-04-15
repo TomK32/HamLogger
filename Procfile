@@ -1,1 +1,1 @@
-web: node app/server.js 80
+web: node app/server.js 8080
