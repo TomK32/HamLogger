@@ -14,6 +14,7 @@ Proudly created by devlol hackerspace.
 
 * https://en.wikipedia.org/wiki/Contest_logging_software
 * https://en.wikipedia.org/wiki/Contesting
+* https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0
 
 ## Team
 
