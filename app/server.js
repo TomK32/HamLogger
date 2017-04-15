@@ -3,20 +3,21 @@
 const Hapi = require('hapi');
 
 // Load models
-var models = glob.sync("models/**/*.js");
-models.forEach(function (modelPath) {
-  require(path.resolve(modelPath));
+const models = glob.sync('models/**/*.js');
+
+models.forEach((modelPath) => {
+    require(path.resolve(modelPath));
 });
 
 const server = new Hapi.Server();
 server.connection({ port: 3000, host: 'localhost' });
 
 server.route({
-  method: 'GET',
-  path: '/',
-  handler: function (request, reply) {
-    reply('Hello, world!');
-  }
+    method: 'GET',
+    path: '/',
+    handler: (request, reply) => {
+        reply('Hello, world!');
+    }
 });
 
 server.start((err) => {
